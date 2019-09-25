@@ -4,7 +4,8 @@
 
 2. Vágyálomrendszer leírása
 
-	- 
+	- Projektünk célja egy BlackJack nevű szerencsejáték szabályain alapuló működő játékszoftver megalkotása. A program elindítása után egy tetszőleges felhasználónevet kell beírni, regisztráció nem szükséges. Ennek célja, hogy a menüben található "Statisztikák" gombra kattintva kimutassa hány kört sikerült megnyerned a játékban. Alatta lévő menüpontban mely a "Játékszabályok" nevet kapta, elolvashatjuk a BlackJack játékszabályait és mindent amit érdemes tudni róla. Az utolsó menüpont a "Játék" ahol azonnal elkezdheted a játékot. A játék Offline módban játszható csak, tehát egyedül vagy az osztó(gép) ellen.
+A játék nem valóságos valutával működik, minden játék elején egy fix értéket kapsz amivel "gazdálkodnod" kell a játékban. Futtatható számítógépen böngészőből.
 
 3. A rendszerre vonatkozó pályázat, törvények, rendeletek, szabványok és ajánlások felsorolása
 
