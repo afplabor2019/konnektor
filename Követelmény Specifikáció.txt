@@ -1,26 +1,28 @@
 1. Jelenlegi helyzet leírása
 
-	-
+	- A huszonegy (másnéven BlackJack) egy kártyajáték, amit általában kaszinókban vagy klubbokban játszanak, de egyre elterjedtebbek az online és számítógépes változatai. 
 
 2. Vágyálomrendszer leírása
 
-	-
+	- 
 
 3. A rendszerre vonatkozó pályázat, törvények, rendeletek, szabványok és ajánlások felsorolása
 
-	-
+	- 	2016. évi XCIII. törvény a szerzői jogok és a szerzői joghoz kapcsolódó jogok közös kezeléséről
+		1991. évi XXXIV. törvény a szerencsejáték szervezéséről
+		2012. évi CXLIV. törvény a szerencsejáték szervezéséről szóló 1991. évi XXXIV. törvény módosításáról
 
 4. Jelenlegi üzleti folyamatok modellje
 
-	-
+	- Egy klub megkereste cégünket, hogy tagjai részére egy Windows platformon használható Huszonegyes játékot rendelne.
 
 5. Igényelt üzleti folyamatok modellje
 
-	-
+	- 
 
 6. Követelménylista
 
-	-
+	- 
 
 7. Irányított és szabad szöveges riportok szövege
 
