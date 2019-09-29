@@ -19,7 +19,9 @@ A játék nem valóságos valutával működik, minden játék elején egy fix �
 
 5. Igényelt üzleti folyamatok modellje
 
-	- 
+	- Egy szoftver fejlesztése szórakoztatás céljából.
+	- Az ügyfél megtanulhatja a BlackJack nevű szerencsejátéknak a szabályait, illetve szórakoztatás céljából használni a játékszoftvert.
+	- Használati útmutatót mellékelünk a szoftver használatáról.
 
 6. Követelménylista
 
@@ -27,7 +29,7 @@ A játék nem valóságos valutával működik, minden játék elején egy fix �
 
 7. Irányított és szabad szöveges riportok szövege
 
-	-
+	- 
 
 8. Fogalomszótár
 
