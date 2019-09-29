@@ -25,7 +25,12 @@ A játék nem valóságos valutával működik, minden játék elején egy fix �
 
 6. Követelménylista
 
-	- 
+	- Alapjáték: A programnak a BlackJack(21) játék szabályai alapján kell működnie ahol a cél, hogy legyőzze az osztó(gép) kártyáit.
+	- Jogkörök: - Az ügyfél létrehozhat több felhasználót a játékszoftverben.
+	            - Ha a felhasználó hibát(bugot) talál, jelentheti a menüben található "Bug jelentése" gombbal.
+	- Statisztika: A felhasználó megnézheti megnyert/elvesztett köreinek számát és ennek arányát. (Nyerés/Vesztés rátió)
+	- Korhatár: 18 év betöltése nem kötelező ennél a játékszoftvernél, mert az eredeti játékkal ellentétben nincs szükség valódi valutára.  
+	
 
 7. Irányított és szabad szöveges riportok szövege
 
