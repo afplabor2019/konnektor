@@ -38,4 +38,6 @@ A játék nem valóságos valutával működik, minden játék elején egy fix �
 
 8. Fogalomszótár
 
-	-
+	- Online: internethez kapcsolódott, elérhető, folyamatban kapcsolatban lévő
+	- Platform: több szemszögből érthető, adott programhoz szükséges hardver- és/vagy a szoftverkörnyezet
+	- Bug: Fejlesztési hiba
