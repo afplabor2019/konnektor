@@ -1,6 +1,7 @@
 1. A rendszer céljai és nem céljai
 
-	-	
+	A rendszer célja, hogy a felhasználó az otthoni kaszinózás élményét élje át. Első sorban unalom űzés céljából. A 		rendszer használatához pénz nem szükséges.
+	A rendszer nem célja, hogy függőséget okozzon. 
 
 2. Jelenlegi helyzet leírása
 
