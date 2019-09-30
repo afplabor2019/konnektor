@@ -3,3 +3,4 @@ Csapat névsor:
 	Tóth Levente
 	Kovács Jázmin
 	Dávid Gergely
+	Jóvér Attila
