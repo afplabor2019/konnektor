@@ -40,7 +40,12 @@
 
 11. Forgatókönyvek
 
-	-
+	-  A felhasználó windows operációs rendszeren keresztül tudja majd használni a szoftvert.
+	-  Regisztráció nem szükséges hozzá, csak egy felhasználó által létrehozott név kell hozzá, hogy a játék el tudja tárolni a pontokat.
+	-  Felhasználó név megadása után a játékfelületen megjelenik egy kártyák leosztása gomb, ami azt a célt szolgálja, hogy megkapjuk az osztó által kapott értékeinket.
+	-  A játék a BlackJack(21) játék szabályai szerint müködik.
+	-  A játék leforgása után megjelenik egy következő kör, és egy játék vége gomb.
+	-  A játék vége gomb lenyomásával megtekinthetjük a a pontszámunkat, és az előző játékosokét is , így láthatjuk hogy állunk a rangsorban.
 
 12. Funkció – követelmény megfeleltetés
 	
