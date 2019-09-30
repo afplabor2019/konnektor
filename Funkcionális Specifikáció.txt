@@ -49,4 +49,8 @@
 
 13. Fogalomszótár
 
-	-
+	-[bug]: Fejlesztési hiba, amely miatt a program nem megfelelő működést eredményez.
+	-[Osztó]: Maga az AI, a lapok osztásáért felelős.
+	-[Játékos]: Ezek vagyunk mi.
+	-[Lapot kér]: A játékos lapot kérhet, amennyiben nem találja megfelelőnek a kapott lapok összegét.
+	-[Megáll]: A játékos megállhat, amennyiben elérte a minimum lap összeget, vagy a kapott lapok összegét megfelelőnek 		nem találja.
