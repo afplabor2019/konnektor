@@ -5,7 +5,7 @@
 
 2. Jelenlegi helyzet leírása
 
-	-
+	- Jelenlegi cél, kialakítani egy olyan windows alkalmazást amely működőképes és tartalmazza a játékprogramot. A játékba való belépés után a menüben számos opció közül választhat. Megbírja nézni a játékszabályokat, a statisztikákat és a játékot is innen tudja indítani
 
 3. Vágyálomrendszer leírása
 
