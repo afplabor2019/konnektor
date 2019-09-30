@@ -1,6 +1,7 @@
 1. A rendszer céljai és nem céljai
 
-	-	
+	A rendszer célja, hogy a felhasználó az otthoni kaszinózás élményét élje át. Első sorban unalom űzés céljából. A 		rendszer használatához pénz nem szükséges.
+	A rendszer nem célja, hogy függőséget okozzon. 
 
 2. Jelenlegi helyzet leírása
 
@@ -8,7 +9,10 @@
 
 3. Vágyálomrendszer leírása
 
-	-
+	- A program elindításakor bekér tőlünk egy felhasználónevet. Ezután a "Tovább" gombra kattintva 	  továbbléphetünk a menübe ahol az alábbi menüpontok találhatóak:
+		- Játékszabályok: Erre a pontra kattintva megismerhetjük a BlackJack szabályait.
+		- Statisztikák: Megmutatja a felhasználók megnyert köreit.
+		- Kilépés: Kiléphetsz a játékból. 
 
 4. A rendszerre vonatkozó külső megszorítások: pályázat, törvények, rendeletek, szabványok és ajánlások felsorolása
 
@@ -53,4 +57,8 @@
 
 13. Fogalomszótár
 
-	-
+	-[bug]: Fejlesztési hiba, amely miatt a program nem megfelelő működést eredményez.
+	-[Osztó]: Maga az AI, a lapok osztásáért felelős.
+	-[Játékos]: Ezek vagyunk mi.
+	-[Lapot kér]: A játékos lapot kérhet, amennyiben nem találja megfelelőnek a kapott lapok összegét.
+	-[Megáll]: A játékos megállhat, amennyiben elérte a minimum lap összeget, vagy a kapott lapok összegét megfelelőnek 		nem találja.
