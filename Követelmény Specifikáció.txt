@@ -34,8 +34,18 @@ A játék nem valóságos valutával működik, minden játék elején egy fix �
 
 7. Irányított és szabad szöveges riportok szövege
 
-	- 
-
+	Megrendelő: Jó napot kívánok!
+	Kivitelező: Jó napot! Miben lehetek a szolgálatára?
+	Megrendelő: A nyugdíjas klubba szeretnénk egy kártyajáték programmal kedveskedni a szépkorúaknak egy krumpli 
+	és erzsi osztást követően.
+	Kivitelező: Nahát, ez csodálatos! Pontosan milyen programra gondolnak? Valami bonyolult römi esetleg kanaszta?
+	Megrendelő: Nem az már milliárdos tétel lenne. Megelékszünk egy BlackJack programmal annak is nagyon fognak örülni.
+	Kivitelező: Mennyire bonyolult dologra van szüksége?
+	Megrendelő: A létező legegyszerűbbre.
+	Kivitelező: Akkor nem kell eltároljon adatokat, kompetetív mód se legyen benne?
+	Megrendelő: Igen, csak legyenek szép színes kártyák és menjen!
+	Kivitelező: Értettem, holnapra kész is, az 5 misi 30%-át milyen számlaszámra küldhetem?
+	Megrendelő: Még soha nem volt ennyire korrekt üzletem, igazán elégedett vagyok, jövök máskor is!
 8. Fogalomszótár
 
 	- Online: internethez kapcsolódott, elérhető, folyamatban kapcsolatban lévő
