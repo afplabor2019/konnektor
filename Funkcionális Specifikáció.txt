@@ -9,10 +9,7 @@
 
 3. Vágyálomrendszer leírása
 
-	- A program elindításakor bekér tőlünk egy felhasználónevet. Ezután a "Tovább" gombra kattintva 	  továbbléphetünk a menübe ahol az alábbi menüpontok találhatóak:
-		- Játékszabályok: Erre a pontra kattintva megismerhetjük a BlackJack szabályait.
-		- Statisztikák: Megmutatja a felhasználók megnyert köreit.
-		- Kilépés: Kiléphetsz a játékból. 
+	-
 
 4. A rendszerre vonatkozó külső megszorítások: pályázat, törvények, rendeletek, szabványok és ajánlások felsorolása
 
@@ -32,7 +29,15 @@
 
 8. Használati esetek
 	
-	-
+	Szereplők:
+		- AI
+		- Játékos(mi)
+
+	AI használati esete:
+		-Lapok osztása: Lapokat oszt le a játékosnak, illetve önmagának.
+	
+	Játékos használati esete: 
+		-Játszás: A játékos szórakoztatása, unalom űzése.
 
 9. Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
 	
