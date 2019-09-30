@@ -5,11 +5,14 @@
 
 2. Jelenlegi helyzet leírása
 
-	-
+	- Jelenlegi cél, kialakítani egy olyan windows alkalmazást amely működőképes és tartalmazza a játékprogramot. A játékba való belépés után a menüben számos opció közül választhat. Megbírja nézni a játékszabályokat, a statisztikákat és a játékot is innen tudja indítani
 
 3. Vágyálomrendszer leírása
 
-	-
+	- A program elindításakor bekér tőlünk egy felhasználónevet. Ezután a "Tovább" gombra kattintva 	  továbbléphetünk a menübe ahol az alábbi menüpontok találhatóak:
+		- Játékszabályok: Erre a pontra kattintva megismerhetjük a BlackJack szabályait.
+		- Statisztikák: Megmutatja a felhasználók megnyert köreit.
+		- Kilépés: Kiléphetsz a játékból. 
 
 4. A rendszerre vonatkozó külső megszorítások: pályázat, törvények, rendeletek, szabványok és ajánlások felsorolása
 
@@ -41,7 +44,12 @@
 
 11. Forgatókönyvek
 
-	-
+	-  A felhasználó windows operációs rendszeren keresztül tudja majd használni a szoftvert.
+	-  Regisztráció nem szükséges hozzá, csak egy felhasználó által létrehozott név kell hozzá, hogy a játék el tudja tárolni a pontokat.
+	-  Felhasználó név megadása után a játékfelületen megjelenik egy kártyák leosztása gomb, ami azt a célt szolgálja, hogy megkapjuk az osztó által kapott értékeinket.
+	-  A játék a BlackJack(21) játék szabályai szerint müködik.
+	-  A játék leforgása után megjelenik egy következő kör, és egy játék vége gomb.
+	-  A játék vége gomb lenyomásával megtekinthetjük a a pontszámunkat, és az előző játékosokét is , így láthatjuk hogy állunk a rangsorban.
 
 12. Funkció – követelmény megfeleltetés
 	
@@ -49,4 +57,8 @@
 
 13. Fogalomszótár
 
-	-
+	-[bug]: Fejlesztési hiba, amely miatt a program nem megfelelő működést eredményez.
+	-[Osztó]: Maga az AI, a lapok osztásáért felelős.
+	-[Játékos]: Ezek vagyunk mi.
+	-[Lapot kér]: A játékos lapot kérhet, amennyiben nem találja megfelelőnek a kapott lapok összegét.
+	-[Megáll]: A játékos megállhat, amennyiben elérte a minimum lap összeget, vagy a kapott lapok összegét megfelelőnek 		nem találja.
