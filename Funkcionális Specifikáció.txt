@@ -5,7 +5,7 @@
 
 2. Jelenlegi helyzet leírása
 
-	-
+	- Jelenlegi cél, kialakítani egy olyan windows alkalmazást amely működőképes és tartalmazza a játékprogramot. A játékba való belépés után a menüben számos opció közül választhat. Megbírja nézni a játékszabályokat, a statisztikákat és a játékot is innen tudja indítani.
 
 3. Vágyálomrendszer leírása
 
@@ -16,43 +16,15 @@
 
 4. A rendszerre vonatkozó külső megszorítások: pályázat, törvények, rendeletek, szabványok és ajánlások felsorolása
 
-	A külső megszorítások közé tartoziknak a :
-	- pályázat
-	- törvények
-	- rendeletek
-	- szabványok és ajanlások
-	- A pályázatban leírt időnek és kriteriumoknak meg kell felelni.
-	A pályázaton elnyert összeggel el kell számolni mire használjuk fel.
-	A megadott időn belül el kell végezni a feladatokat, különben nem teljesül a feltétel.
-	- A programnak meg kell felelni az adott országban meghatározott törvényeknek.
-	A játék adott esetben nem igazi valutát használ, így nem minősül szerencsejátéknak. Ennek
-	következtében kiskorúak is használhatják.
-	- Lehetnek kifejezetten erre a célra meghatározott rendeletek aminek szintén meg kell felelni.
-	Mivel Magyarországon készül a program így a magyar törvénykönyv pontjainak meg kell felelni.
-	-Figyelembe kell venni , hogy a programot milyen eszközön folgják használni.
-	Minden eszköznek meg kell felelni a szabványosításnak.
-	- Az összesnek együtt meg kell felelni, hogy létrejöhessen, és használható legyen a program.
-	Ha már az egyik nem teljesül , vagy a program nem megfelelő, úgy nem nem lehet használni.
-
+	-
 
 5. Jelenlegi üzleti folyamatok modellje
 	
-	-A jelenlegi üzleti modellben a felhasználók saját pénzükkel tudnak játszani, amit tétként tesznek
-	fel. Egy másik személy osztja ki a kártyákat számára ami alapján derül ki hogy nyer- e a játékos
-	vagy sem. Ezt kellene elektronikusan megoldani, a gép osztaná a kártyákat, a játék pedig nem
-	valós pénzzel működne.
+	-
 
 6. Igénylet üzleti folyamatok modellje
 
-	-A szerencsejátékok népszerűek az emberek körében. A nyerni akarás vágya miatt szeretik az
-	ilyen játékokat. Ez a program ezt lehetővé teszi úgy , hogy semmilyen költséggel nem jár, de az
-	élmény ugyanolyan.
-	- Előnyei, hogy nem kell rizikózni a felhasználóknak a saját pénzükkel .
-	- Képességei az, hogy otthon mindenkitől, és mindentől függetlenül lehet játszani, úgy hogy nincs
-	stressz alá téve a felhasználó. Nem kell hozzá egy másik személy sem, hisz a gép mindent
-	elvégez.
-	- Lehetőségei hogy a felhasználó nyomonkövetheti az eredményeit, összehasonlíthatja mások és
-	önnmaga korábbi pontjaival a a végeredményt, rangsorban feltüntetve.
+	-
 
 7. Követelménylista
 	
