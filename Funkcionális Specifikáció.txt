@@ -41,7 +41,15 @@
 
 6. Igénylet üzleti folyamatok modellje
 
-	-
+	-A szerencsejátékok népszerűek az emberek körében. A nyerni akarás vágya miatt szeretik az
+	ilyen játékokat. Ez a program ezt lehetővé teszi úgy , hogy semmilyen költséggel nem jár, de az
+	élmény ugyanolyan.
+	- Előnyei, hogy nem kell rizikózni a felhasználóknak a saját pénzükkel .
+	- Képességei az, hogy otthon mindenkitől, és mindentől függetlenül lehet játszani, úgy hogy nincs
+	stressz alá téve a felhasználó. Nem kell hozzá egy másik személy sem, hisz a gép mindent
+	elvégez.
+	- Lehetőségei hogy a felhasználó nyomonkövetheti az eredményeit, összehasonlíthatja mások és
+	önnmaga korábbi pontjaival a a végeredményt, rangsorban feltüntetve.
 
 7. Követelménylista
 	
