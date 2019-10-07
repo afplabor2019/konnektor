@@ -37,7 +37,10 @@
 
 5. Jelenlegi üzleti folyamatok modellje
 	
-	-
+	-A jelenlegi üzleti modellben a felhasználók saját pénzükkel tudnak játszani, amit tétként tesznek
+	fel. Egy másik személy osztja ki a kártyákat számára ami alapján derül ki hogy nyer- e a játékos
+	vagy sem. Ezt kellene elektronikusan megoldani, a gép osztaná a kártyákat, a játék pedig nem
+	valós pénzzel működne.
 
 6. Igénylet üzleti folyamatok modellje
 
