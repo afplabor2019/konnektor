@@ -91,7 +91,7 @@
 
 12. Funkció – követelmény megfeleltetés
 	
-	-
+	F1 BlackJack(lásd K1,K2): Az alkalmazás C# nyelven készült, ezért windows platformokon lesz elérhető. A K1 és K2 fukciók magukban foglalják a BlackJack játék menetét. A lapkérés és a megállás a tét nélküli játék alapfunkciói, igény esetén tovább bővíthető.
 
 13. Fogalomszótár
 
