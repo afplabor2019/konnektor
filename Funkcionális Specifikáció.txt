@@ -60,7 +60,15 @@
 
 8. Használati esetek
 	
-	-
+	Szereplők:
+		- AI
+		- Játékos(mi)
+
+	AI használati esete:
+		-Lapok osztása: Lapokat oszt le a játékosnak, illetve önmagának.
+	
+	Játékos használati esete: 
+		-Játszás: A játékos szórakoztatása, unalom űzése.
 
 9. Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
 	
