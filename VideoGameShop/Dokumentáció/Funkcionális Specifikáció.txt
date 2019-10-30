@@ -69,8 +69,32 @@
 	hozzáadja az új játékokat, valamint törli a kifutott termékeket, kezeli az esetleges 
 	akciókat, módosítja a termékek verzióit, árait. 
 
-12. - 
-
+12. - Funkció - követelmény megfeleltetés
+	F1: Logolás, jogosultsági szintek
+	A program elkészítésének elsõ lépéseként elkészítjük a 2 jogosultsági szintet, valamint a logoló
+	és regisztráló képernyõt. Lásd képernyõtervek 1., 2. ábrák. Prioritási szint: 10/10, 1. sprint.
+	K1 - bejelentkezés
+	K2 - regisztráció
+	K3 - jogosultságok, 2 profil: felhasználó(F) és admin(A)
+	F2: Információk megjelenítése
+	Párhuzamosan az elõzõ feladattal elkészítjük a funkciót, melyet a felhasználó és az admin együttesen
+	használ majd, elkészítjük hozzá az adatbázist. Lásd adatbázisterv. Prioritási szint: 10/10, 1. sprint.
+	K4 - adatok lekérése
+	F3: Adatbázis funkciók fejlesztése
+	Az elkészült adatbázishoz funkciókat rendelünk, azokat teszteljük, a program alap struktúrájával végzünk.
+	Prioritási szint: 9/10, 2. sprint.
+	K5 - hozzáadás az adatokhoz
+	K6 - törlés az adatokból
+	K7 - módosítás az adatokon
+	F4: A vásárlás funkciói, a termék kifizetése
+	A rendelkezésre álló adatbázisból a kívánt elemek egy vásárlói felületre történõ áthelyezése, onnan a termékek
+	kifizetése. Lásd képernyõtervek 3. ábra. Prioritási szint 8/10, 2. sprint.
+	K8 - bevásárló kosárhoz adás
+	K9 - bevásárló kosárból törlés
+	K10 - összegzés
+	K11 - a kívánt tételek fizetése
+	
+	A teljesítési idõ kb. 4 hét.
 
 13. - 
 
