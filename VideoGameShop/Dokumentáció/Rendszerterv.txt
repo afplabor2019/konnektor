@@ -10,9 +10,43 @@
 4. - 
 
 
-5. - 
-
-
+5. - Funkcionális terv
+	Rendszerszereplõk:	
+		- Felhasználó
+		- Admin
+	
+	Rendszer használati esetek és lefutásaik:
+		Felhasználó:
+			-Bejelentkezés
+			-Regisztráció
+			-Termékek böngészése
+			-Kosárhoz adni/eltávolítani terméket
+			-Vásárlás
+		
+		Admin:
+			-Bejelentkezés
+			-Regisztráció
+			-Termékek böngészése
+			-Termék hozzáadása
+			-Termékadatok módosítása
+			-Termék törlése
+			-Kosárhoz adni/eltávolítani terméket
+			-Vásárlás		
+		
+	Menü hierarchiák:
+		Bejelentkezés
+			-Bejelentkezés
+			-Regisztráció
+			
+		Fõablak
+			-Kijelentkezés
+			-Termékek böngészése
+			-Termék hozzáadása
+			-Termékadatok módosítása
+			-Termék törlése
+			-Kosárhoz adni/eltávolítani terméket
+			-Vásárlás		
+			
 6. - 
 
 
