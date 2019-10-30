@@ -47,8 +47,9 @@
 			-Kosárhoz adni/eltávolítani terméket
 			-Vásárlás		
 			
-6. - 
-
+6. - Fizikai környezet
+	A fejlesztõ csapat számára a fejlesztési folyamat az ingyenes,Visual Studio fejlesztõi környezetben zajlik, ami képes az intelligens kódkezelésre (intelligent code completion) az IntelliSense segítségével.
+	Ahhoz, hogy a szoftvert használhassuk a számítógépen szükség van egy Windows operációs rendszert futtató számítógépre.
 
 7. - 
 
