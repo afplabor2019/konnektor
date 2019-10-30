@@ -36,8 +36,23 @@
 8. - 
 
 
-9. -
-
+9. - Megfeleltetés
+	Jelmagyarázat:
+	done- elékszítve az átadásig, tesztelve
+	might - nem biztos, hogy elkészül az átadásig
+	failed - nem készül el idõre
+	
+	done K1 - bejelentkezés
+	done K2 - regisztráció
+	done K3 - jogosultságok, 2 profil: felhasználó(F) és admin(A)
+	done K4 - adatok lekérése
+	done K5 - hozzáadás az adatokhoz
+	might K6 - törlés az adatokból
+	might K7 - módosítás az adatokon
+	might K8 - bevásárló kosárhoz adás
+	might K9 - bevásárló kosárból törlés
+	done K10 - összegzés
+	failed K11 - a kívánt tételek fizetése
 
 10. - 
 
