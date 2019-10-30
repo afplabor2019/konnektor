@@ -16,8 +16,22 @@
 6. - 
 
 
-7. - 
-
+7. - Követelménylista
+	Login mûveletek
+	K1 - bejelentkezés
+	K2 - regisztráció
+	K3 - jogosultságok, 2 profil: felhasználó(F) és admin(A)
+	Felület funkciói
+	1) Adatbázisfunkciók
+	K4 - adatok lekérése (F,A)
+	K5 - hozzáadás az adatokhoz (A)
+	K6 - törlés az adatokból (A)
+	K7 - módosítás az adatokon (A)
+	2) Vásárlás funkciói (F,A)
+	K8 - bevásárló kosárhoz adás
+	K9 - bevásárló kosárból törlés
+	K10 - összegzés
+	K11 - a kívánt tételek fizetése
 
 8. - 
 
