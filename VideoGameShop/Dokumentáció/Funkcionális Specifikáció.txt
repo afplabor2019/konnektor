@@ -54,8 +54,17 @@
 	done K10 - összegzés
 	failed K11 - a kívánt tételek fizetése
 
-10. - 
-
+10. - Forgatókönyvek
+	2 féle szerepkör forgatókönyve:
+	F - felhasználó
+	A felhasználó regisztrációt követõen bejelentkezik a programba, majd keresgélni kezd
+	az ott megjelenített termékek listájában. Amennyiben valamely játék elnyeri tetszését,
+	azt vagy azokat "kosárba" helyezi és megvásárolja.
+	A - adminisztrátor
+	A cég által rendelkezésére bocsájtott felhasználói fiók segítségével belép, mely
+	lehetõséget biztosít az extra jogkörökre. Karbantartja az szoftvert és az adatbázist,
+	hozzáadja az új játékokat, valamint törli a kifutott termékeket, kezeli az esetleges 
+	akciókat, módosítja a termékek verzióit, árait. 
 
 11. - 
 
