@@ -17,8 +17,9 @@
 	a kivitelezõ cég állja.
 	5. Az elékszült projektet a cég átadja a megrendelõ cégnek, a jogtulajdon átszáll, további felelõsség a kivitelezõt nem terheli.
 
-5. - 
-
+5. - Igénylet üzleti folyamatok modellje
+	1. A szoftver eltárolja a megjelenõ videójátékok adatait (ár, megjelenés ideje, a játék típusa, fõbb jellemzõi, program mérete, majd végül a program).
+	2. A szoftver a játék megjelenését követõen lehetõséget nyújt annak kifizetése utáni letöltésére.
 
 6. - 
 
