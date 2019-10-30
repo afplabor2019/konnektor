@@ -51,8 +51,11 @@
 	A fejlesztõ csapat számára a fejlesztési folyamat az ingyenes,Visual Studio fejlesztõi környezetben zajlik, ami képes az intelligens kódkezelésre (intelligent code completion) az IntelliSense segítségével.
 	Ahhoz, hogy a szoftvert használhassuk a számítógépen szükség van egy Windows operációs rendszert futtató számítógépre.
 
-7. - 
-
+7. - Absztrakt domain modell
+	A program mûködése során a felhasználó kétféle szerepkörben szerepelhet: admin vagy felhasználó. Ennek megfelelõen kap az alany funkciókat, 
+	amelyek a szerepkörökhöz kizárólagosan vagy nem kizárólagosan kapcsolódnak: azaz vagy csak õ fér hozzá, vagy mindketten a saját oldalukról.
+	Az általános alany szerepkörét a bejelentkezés után a Jogosultság vizsgálata dönti el. Az adatbázis kezelését szabályozó funkciók
+	kizárólag az admin számára elérhetõek. A további eszközöket mindkét szint használhatja.
 
 8. - 
 
