@@ -96,6 +96,8 @@
 	
 	A teljesítési idõ kb. 4 hét.
 
-13. - 
-
+13. - Fogalomszótár
+	[bug]: fejlesztési hiba ami által a program nem a várt eredményt hozza 
+	[backend]: A kiszolgáló, ahonnan az alkalmazást el lehet érni 
+	[frontend]:  egy réteg ami feladata a rendszerbol kijutó adatok prezentálása, illetve a bejövo adatok fogadása
 
