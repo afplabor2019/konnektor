@@ -63,8 +63,26 @@
 9. -
 
 
-10. - 
-
+10. - Implementációs terv
+	Perzisztencia osztályok:
+			UserMapper - Model		
+			GameMapper - Model		
+		
+		Üzleti logika osztályok:
+			LoginLogout
+			Registration		
+			UserActions
+			AdminActions
+			
+		Kliens oldal osztályai:
+			LoginRegWindow
+			LoginPage
+			RegisterPage
+			MainWindow
+			EditProductWindow
+			AddProductPage
+			ModifyProductPage
+			RemoveProductPage
 
 11. - 
 
