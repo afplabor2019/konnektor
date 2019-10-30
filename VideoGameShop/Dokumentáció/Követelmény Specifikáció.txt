@@ -7,8 +7,15 @@
 3. - 
 
 
-4. - 
-
+4. - Jelenlegi üzleti folyamatok modellje
+	1. Egy újonan létesült videójátékokat forgalmazó cég kereste meg fejlesztõcsapatunkat, hogy kreáljunk
+	a számukra egy asztali alkalmazást, mely segítségével játékaikat, appjaikat megvásárolhatják, nyomon követhetik
+	a reménybeli kliensek.
+	2. A projektnek egyenlõre nem célja az online rendszer fejlesztése azt egy külön pályázat keretein belül fogják kiírni.
+	3. A cég egy képviselõje részt vesz a fejlesztésben, véleményezi a munkát sprintenként és felügyeli a felület kialakítását.
+	4. Az elkészült programot a cég által delegált tesztelõ csapat fogja ellenõrizni, az esetleges hiányosságok mentén fellépõ költségeket
+	a kivitelezõ cég állja.
+	5. Az elékszült projektet a cég átadja a megrendelõ cégnek, a jogtulajdon átszáll, további felelõsség a kivitelezõt nem terheli.
 
 5. - 
 
