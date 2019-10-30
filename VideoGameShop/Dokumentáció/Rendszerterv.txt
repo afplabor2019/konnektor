@@ -90,6 +90,10 @@
 12. - 
 
 
-13. - 
-
+13. - Karbantartási terv
+	A szoftver a jövõben nem igényel nagy karbantartásokat, a szükséges karbantartások az 
+	alábbi egységekbõl állnak:
+	
+	- Igény esetén új funkciók implementálása.
+	- Igény esetén új műveletek implementálása.
 
