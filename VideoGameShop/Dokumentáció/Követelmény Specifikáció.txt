@@ -1,7 +1,11 @@
 1. - 
 
 
-2. - 
+2. - Vágyálomrendszer leírása
+	Végcélunk a videójáték vásárlásának egyszerűsítése, lebonyolítása. Egy olyan működő asztali alkalmazást szeretnénk megírni amiben a látogató regisztráció segítségével
+	létrehozhat saját profilt, majd szabadon böngészhet videójáték boltunkban. Lehetősége lesz egy virtuális
+	kosárhoz hozzáadni a megvásárolni kívánt termékeket. Ha projektünk sikeresnek tekinthető, bővítenénk olyan elemekkel
+	mint például az adott termékre kattintva például egy játékról ismertetőt olvasni, esetleg videót is megnézhetünk róla.
 
 
 3. - 
