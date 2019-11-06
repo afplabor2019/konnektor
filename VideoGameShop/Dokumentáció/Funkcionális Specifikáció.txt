@@ -9,7 +9,13 @@
 	  felhasználó. Láthatja, hogy raktáron van e a termék, mennyibe kerül és még pillanatok alatt meg is találhatja. 	  
 
 
-3. - 
+3. - Vágyálomrendszer leírása
+	A program elindításakor választhatunk, hogy regisztrálunk e vagy ha van már profilunk akkor bejelentkezünk e. Ha még nincs profilunk a regisztrációra kattintva, az alkalmazás átirányít
+	minket egy regisztrációs lapra. Sikeres regisztráció esetén visszalép magától a Login fülre ahol bejelentkezhetünk. Miután bejelentkeztünk az alkalmazás tetején kulcsszavakkal rákereshetünk
+	az adott termékre. Alapesetben megjelenés szerint böngészhetünk a termékek közül, de lehetőségünk lesz ár szerint és megjelenési dátum szerint növekvő/csökkenő sorrendbe állítani őket.
+	A megvásárolni kívánt termékünket a kosár ikonra kattintva beletehetjük virtuális kosarunkba. Jobb oldalon található virtuális kosarunkba láthatjuk a megvásárolni kívánt termékeket.
+	Ha úgy dönt a felhasználó, hogy mégsem szeretné megvásárolni, akkor az ár melletti áthúzott kosár ikonnal törölhetjük. Checkout gombra kattintva továbbléphetünk a vásárlás további folyamataihoz.
+	ADMIN jogosultsággal rendelkező felhasználóknak extra funkciókkal rendelkeznek. Adhatnak, módosíthatnak vagy akár törölhetnek is termékeket a virtuális boltból. 
 
 
 4. - 
