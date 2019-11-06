@@ -25,8 +25,23 @@
 	1. A szoftver eltárolja a megjelenõ videójátékok adatait (ár, megjelenés ideje, a játék típusa, fõbb jellemzõi, program mérete, majd végül a program).
 	2. A szoftver a játék megjelenését követõen lehetõséget nyújt annak kifizetése utáni letöltésére.
 
-6. - 
+6. - Funkcionális követelmények
+	1. Biztonsági követelmények:
+		- Titkosítás: A rendszer csak titkosított formában tárolhatja a felhasználó jelszavait a rendszerben.
+	2. Funkcionális követelmények:
+		- Regisztráció: Regisztrációval létrehozhatunk új Accountot felhasználónév és jelszó megadásával. Ez az alap feltétele
+				alkalmazásunk igénybevételéhez. Adatbázisunkban nem létezhet egyszerre több azonos felhasználó és jelszó.
+				Regisztráció után visszaugrik a Login fülre a program.
+		- Bejelentkezés: Helyes felhasználónév és jelszó begépelése esetén a Login gombra kattintva megnyitja a főképernyőt.
+		- Keresés: Lehetősége van a felhasználónak kulcsszavakkal rákeresni az adott termékre, ezzel megkönnyítve a böngészést.
+		- Termékinformáció: A kiválasztott termékre kattintva rövid ismertetőt olvashat el róla, többek között az árát is megtekintheti.
+		- Kosárba helyezés: A termékek mellett megtalálható egy kosár kinézetű ikon amivel az alkalmazás a felhasználó virtuális kosarába helyezi a megvásárolni kívánt terméket/termékeket.
+		- Kosár: A kosár gombra rákattintva megtalálhatjuk a kosárba helyezett termékeinket, a neveit, az árait és az összes termék árának összegét is.
+			 A felhasználónak lehetősége van a kosárból a nem kívánt termékeket eltávolítani. A Checkout gombra kattintva átirányít az alkalmazás a vásárláshoz.
 
+		- Admin: Regisztrációnál csak alapértelmezett felhasználót lehet létrehozni. Viszont az adminoknak lehetőségük van terméket hozzáadni, módosítani és törölni.
+	3. Nem funkcionális követelmények:
+		- A felhasználóknak lehetőségük van szerkeszteni profiljukat, új profilképet beállítani, jelszót változtatni és akár a saját accountjukat is letörölhetik. 
 
 7. - 
 
