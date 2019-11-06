@@ -1,7 +1,12 @@
 1. - 
 
 
-2. - 
+2. - Jelenlegi helyzet leírása
+	- Egy olyan rendszer megvalósítása amely a funkcionális specifikációban leírt vágyálomrendszernek megfelel. Egy olyan asztali alkalmalmazás
+	 kialakítása amely átláthatóan tartalmazza egy webshop funkcióit. Az alkalmazásba bejelentkezve elkülönítve látható az alap felhasználói és az admin felület.
+	- Videójátékok vásárlását szeretnénk megkönnyíteni alkalmazásunkal. Az emberek elmehetnek különféle valóságban lévő videójáték boltokba, ám ez legtöbbször útiköltséggel
+	  és idővel járhat. Ráadásul nem garantált, hogy éppen az adott kívánt termék raktáron van. Online boltunk használatával akár otthonról is korlátozás nélkül böngészhet a
+	  felhasználó. Láthatja, hogy raktáron van e a termék, mennyibe kerül és még pillanatok alatt meg is találhatja. 	  
 
 
 3. - 
