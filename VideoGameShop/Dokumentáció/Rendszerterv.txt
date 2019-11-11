@@ -72,7 +72,11 @@
 8. - 
 
 
-9. -
+9. - Adatbázisterv
+	
+	User tábla: UserId(int NOT NULL, primary key), Username(VARCHAR (20)), Password(VARCHAR (20)), Balance(int NOT NULL);
+	Product tábla: ProductId(int NOT NULL, primary key), Title(VARCHAR (50)), Index(VARCHAR (500)), ReleaseDate (DATETIME), Price (int NOT NULL);
+	Order tábla: OrderId(int NOT NULL, primary key),  ProductId(int NOT NULL), UserId(int NOT NULL), Product.Price(int NOT NULL);  
 
 
 10. - Implementációs terv
