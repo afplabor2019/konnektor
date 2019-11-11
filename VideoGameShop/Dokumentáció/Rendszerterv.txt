@@ -7,7 +7,19 @@
 3. - 
 
 
-4. - 
+4. - Követelmények
+
+	Funkcionális követelmények:
+		- A regisztrált felhasználók adatainak tárolása a GDPR -nak megfelelően
+		- A felhasználók tudjanak kosarukhoz hozzáadni és eltávolítani termékeket
+		- A felhasználók tudjanak vásárolni a boltból
+		- Operációs rendszertől függetlenül jól működjön bármilyen számítógépen
+
+	Nem funkcionális követelmények:
+		- Egyszerű, tisztán átlátható kinézet
+
+	Törvényi előírások:
+		- A hatályban lévő GDPR szabályozásnak meg kell felelnie
 
 
 5. - Funkcionális terv
