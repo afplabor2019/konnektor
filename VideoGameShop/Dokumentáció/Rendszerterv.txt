@@ -4,7 +4,19 @@
 2. - 
 
 
-3. - 
+3. - Üzleti folyamatok modellje
+	
+	Szereplők:
+		- Vásárló
+		- Rendelést felvevő 
+
+	Üzleti folyamatok:
+		- Nézelődés:
+			-Lehetőség van vásárlás nélkül a termékek között nézelődni a vevőnek.
+		- Kosár használata:
+			-Itt sem történik meg a vásárlás, csak el lehet tenni a terméket későbbre, és tovább böngészni a játékok között.
+		- Megrendelés:
+			-A vevő megadja az adatait, majd a fizetési/szállítási módot, és a rendelés felvevője pedig értesítést kap róla.
 
 
 4. - Követelmények
