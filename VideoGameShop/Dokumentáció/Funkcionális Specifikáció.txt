@@ -1,4 +1,4 @@
-1. - 
+﻿1. - 
 
 
 2. - Jelenlegi helyzet leírása
@@ -21,7 +21,12 @@
 4. - 
 
 
-5. - 
+5. - Jelenlegi üzleti folyamatok modellje
+	A jelenlegi üzleti modellben a felhasználók a webböngészőn keresztül vásárolnak.
+	A weboldalon keresztül kell megrendelni a termékeket, a felhasználó ott adhatja meg a személyes adatait.
+	Az adatvédelem céljából kényelmesebb és biztonságosabb egy asztali alkalmazás.
+	A rendeléshez internet szükséges, az szoftvernél ez nem kötelező a vásárláskor, 
+	mert ahogy internet közelében lesz a számítógép akkor a rendelés véglegesítve lesz.
 
 
 6. - 
