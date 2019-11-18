@@ -1,4 +1,7 @@
-1. - 
+﻿1. - Jelenlegi helyzet leírása
+	Jelenleg a videójáték boltok webböngészőben érhetőek el. Ezzel az a probléma, hogy egy előzménytörléssel a kosarunk üres lesz ,
+ 	vagy esetleg ha túlterhelt az oldal nincs lehetőségünk a vásárlásra. Ez egy asztali alkalmazással kiküszöbölhető lenne , hisz
+	ott belépéssel minden adatunk elérhetővé válik, hisz elmenti a program. Ott egy lefagyással sem vész el a mentett adat. 
 
 
 2. - Vágyálomrendszer leírása
