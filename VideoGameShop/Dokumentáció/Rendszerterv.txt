@@ -7,8 +7,8 @@
 3. - Üzleti folyamatok modellje
 	
 	Szereplők:
-		- Vásárló
-		- Rendelést felvevő 
+		- Felhasználó
+		- Admin
 
 	Üzleti folyamatok:
 		- Nézelődés:
@@ -17,8 +17,11 @@
 			-Itt sem történik meg a vásárlás, csak el lehet tenni a terméket későbbre, és tovább böngészni a játékok között.
 		- Megrendelés:
 			-A vevő megadja az adatait, majd a fizetési/szállítási módot, és a rendelés felvevője pedig értesítést kap róla.
-
-
+	Az Admin ezeken felül még jogosult:
+		- Módosítás:
+			- A termékek neveit, árait meg tudja változtatni.
+		- Törlés:
+			- Jogosult törölni tételeket az adatbázisból az Admin.
 4. - Követelmények
 
 	Funkcionális követelmények:
