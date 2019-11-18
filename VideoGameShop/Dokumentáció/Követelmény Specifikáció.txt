@@ -11,8 +11,19 @@
 	mint például az adott termékre kattintva például egy játékról ismertetőt olvasni, esetleg videót is megnézhetünk róla.
 
 
-3. - 
+3. -  A rendszerre vonatkozó pályázat, törvények, rendeletek, szabványok és ajánlások felsorolása
+	
+	- Pályázat:
+		- A pályázatban leírt követelményeknek meg kell felelni. 
+		- Az megadott időintervallumban létre kell jönni a programnak.
+		- A leírt instrukciók alapján kell a feladatot megoldani.
 
+	- Törvények, rendeletek:
+		- A programnak meg kell felelni az ország törvényeinek.
+		- Mivel a személyes adatokat is kezeli az alkalmazás, ezért ezeknek a rendeleteknek is meg kell felelni.
+
+	- Szabványok, ajánlások: 
+		- Mivel laptopon és asztali számítógépen is lehet használni a szoftvert, így kompatibilisnek kell lenni több eszközzel is.
 
 4. - Jelenlegi üzleti folyamatok modellje
 	1. Egy újonan létesült videójátékokat forgalmazó cég kereste meg fejlesztõcsapatunkat, hogy kreáljunk
