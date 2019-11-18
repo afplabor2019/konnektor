@@ -49,7 +49,30 @@
 	K10 - összegzés
 	K11 - a kívánt tételek fizetése
 
-8. - 
+8. - Használati esetek
+
+Szereplők:
+	- Felhasználó
+	- Admin
+
+		- Felhasználó:
+			-Bejelentkezés: A felhasználó a megadott adatokkal be tud jelentkezni.
+			-Reg.sztráció: Ha még nincs regisztrálva ezt pár adattal meg tudja tenni.
+			-Termékek böngészése: A feltöltött termékek között tud nézelődni.
+			-Kosárhoz adni/eltávolítani terméket: A vásárláshoz el tudja raktározni a termékeket,
+			 hogy ne egyesével kelljen megvenni öket, de esetleg ezeket még ha meggondoljavissza tudja vonni.
+			-Vásárlás: A kiválasztott termékeket meg tudja vásárolni.
+		
+		- Admin:
+			-Bejelentkezés: Az admin a megadott adatokkal be tud jelentkezni.
+			-Regisztráció: Ha még nincs regisztrálva ezt pár adattal meg tudja tenni.
+			-Termékek böngészése. A feltöltött termékek között tud nézelődni.
+			-Termék hozzáadása: Fel tud tölteni új tételeket az adatbázisba.
+			-Termékadatok módosítása: Módosítani tud a neven vagy az árakon az admin.
+			-Termék törlése: törölni tud tételeket, ha esetleg az a termék elfogyott.
+			-Kosárhoz adni/eltávolítani terméket: A vásárláshoz el tudja raktározni a termékeket,
+			 hogy ne egyesével kelljen megvenni öket, de esetleg ezeket még ha meggondoljavissza tudja vonni. 
+			-Vásárlás: A kiválasztott termékeket meg tudja vásárolni.
 
 
 9. - Megfeleltetés
