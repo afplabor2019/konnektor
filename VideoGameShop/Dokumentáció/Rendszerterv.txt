@@ -1,4 +1,4 @@
-1. - 
+﻿1. - 
 
 
 2. - 
@@ -103,7 +103,14 @@
 11. - 
 
 
-12. - 
+12. - Telepítési terv
+	Szükség van egy laptopra, vagy egy asztali számítógépre amin fut az adott alkalmazás.
+	Mivel ez egy asztali alkalmazás ezért a sorrend a következő:
+	- Futtatás
+	- Telepítés
+	- Regisztráció
+	- Belépés
+	Belépés után már használható is a program.
 
 
 13. - Karbantartási terv
