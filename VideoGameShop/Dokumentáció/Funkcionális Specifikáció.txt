@@ -29,7 +29,13 @@
 	mert ahogy internet közelében lesz a számítógép akkor a rendelés véglegesítve lesz.
 
 
-6. - 
+6. - Igényelt üzleti folyamatok modellje
+	A túlterhelt weboldalak miatt merült fel az az igŕny, hogy egy letölthető asztali alkalmazásban
+	legyen lehetőség termékeket vásárolni.
+	A cél hogy gördülékenyebben menjen a rendelés, úgy , hogy ne kelljen akadályba ütközni.
+	Előnye , hogy kényelmesen és biztonságosan lehessen vásárolni.
+	Lehetőség van rá , hogy bármilyen adathalászat nélkül akár pár kattintással el lehet végezni a
+	rendelést, úgy hogy bárki vagy bármi áldozatává válljunk.
 
 
 7. - Követelménylista
