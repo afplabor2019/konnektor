@@ -115,7 +115,11 @@
 			ModifyProductPage
 			RemoveProductPage
 
-11. - 
+11. - Tesztterv
+
+	- Unit teszt
+	A program jobb átláthatósága, kezelése és a hibák elkerülésének érdekében fontos, hogy minden
+	metódusra legyen írva unit test.
 
 
 12. - Telepítési terv
