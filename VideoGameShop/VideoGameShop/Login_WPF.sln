@@ -1,7 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login_WPF", "Login_WPF\Login_WPF.csproj", "{5183EA21-9BA7-455F-8E8F-910E62B2FCDE}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGameShop", "Login_WPF\VideoGameShop.csproj", "{5183EA21-9BA7-455F-8E8F-910E62B2FCDE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1DB3D53A-AC34-4404-8E2C-238A43968CFA}"
 	ProjectSection(SolutionItems) = preProject
@@ -21,5 +23,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A28AF1D9-CB56-47C9-9067-99D112E51DCF}
 	EndGlobalSection
 EndGlobal
