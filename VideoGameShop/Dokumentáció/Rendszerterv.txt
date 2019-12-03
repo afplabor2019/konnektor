@@ -88,11 +88,16 @@
 
 
 9. - Adatbázisterv
+	Termekek: Termekid(int, primary key, is NOT NULL,), Termeknev(varchar(45),is NOT NULL), Termekar(int,is NOT NULL), Termekleiras(varchar(200)), Kep(varchar45))
+	Rendeles: Rendelesid(int, primary key, is NOT NULL), Rendelesidatum(datetime, is NOT NULL), Rendelesicim(varchar(45)), Szallitasmodja(varchar(45)), Fizetesmodja(Varchar(45))
+	Admin: Adminid(int, primary key , is NOT NULL), Adminnev (varchar(15), is NOT NULL), Adminjelszo(varchar(15), is NOT NULL), Jogosultsag_Jogosultsagid(int, foreign key, is NOT NULL)
+	Felhasznalo:  Felhasznaloid(int, primary key , is NOT NULL), Felhasznalonev (varchar(15), is NOT NULL), Felhasznalojelszo(varchar(15), is NOT NULL), Jogosultsag_Jogosultsagid(int, foreign key, is NOT NULL)
+	Jogosultsag: Jogosulsagid(int, primary key, is NOT NULL) 
+	- az Admin és Felhasznalo tábla Jogosultsag_Jogosultsagid mezőjéhez kapcsolódik 
+	Kapcsolótáblák: Rendeles_has_Termekek: Rendeles_Rendelesid(int, foreign key , is NOT NULL), Termekek_Termekid(int,foreign key, is NOT NULL)
+			Admin_has_Rendeles: Admin_adminid(int, foreign key, is NOT NULL), Rendeles_Rendelesid(int, foreign key, is NOT NULL)
+			Felhasznalo_has_Rendeles: Felhasznalo_Felhasznaloid(int, foreign key, is NOT NULL), Rendeles_Rendelesid(int, foreign key, is NOT NULL)
 	
-	User tábla: UserId(int NOT NULL, primary key), Username(VARCHAR (20)), Password(VARCHAR (20)), Balance(int NOT NULL);
-	Product tábla: ProductId(int NOT NULL, primary key), Title(VARCHAR (50)), Index(VARCHAR (500)), ReleaseDate (DATETIME), Price (int NOT NULL);
-	Order tábla: OrderId(int NOT NULL, primary key),  ProductId(int NOT NULL), UserId(int NOT NULL), Product.Price(int NOT NULL);  
-
 
 10. - Implementációs terv
 	Perzisztencia osztályok:
