@@ -4,15 +4,18 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="77a7615b3d60431e9c858548a023c8f3" Name="Diagram1">
-        <EntityTypeShape EntityType="VideoGameShopModel.Adminok" Width="1.5" PointX="0.75" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="VideoGameShopModel.Felhasznalo" Width="1.5" PointX="2.75" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="VideoGameShopModel.Jogosultsag" Width="1.5" PointX="0.625" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="VideoGameShopModel.sysdiagram" Width="1.5" PointX="2.625" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="VideoGameShopModel.Adminok_has_Rendeles" Width="1.5" PointX="4.75" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="VideoGameShopModel.Felhasznalo_has_Rendeles" Width="1.5" PointX="4.5" PointY="2.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="VideoGameShopModel.Rendeles_has_Termekek" Width="1.5" PointX="6.75" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="VideoGameShopModel.Termekek" Width="1.5" PointX="6.625" PointY="2.25" IsExpanded="true" />
+      <Diagram DiagramId="e7ec3d7dc90c48c7ae36b47aef0da268" Name="Diagram1">
+        <EntityTypeShape EntityType="VideoGameShopModel.Adminok" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="VideoGameShopModel.Felhasznalo" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="VideoGameShopModel.Jogosultsag" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="VideoGameShopModel.Rendele" Width="1.5" PointX="5.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="VideoGameShopModel.sysdiagram" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VideoGameShopModel.Termek" Width="1.5" PointX="7.5" PointY="2.75" IsExpanded="true" />
+        <AssociationConnector Association="VideoGameShopModel.FK_Adminok_Jogosultsag" ManuallyRouted="false" />
+        <AssociationConnector Association="VideoGameShopModel.FK_Felhasznalo_Jogosultsag" ManuallyRouted="false" />
+        <AssociationConnector Association="VideoGameShopModel.Adminok_has_Rendeles" ManuallyRouted="false" />
+        <AssociationConnector Association="VideoGameShopModel.Felhasznalo_has_Rendeles" ManuallyRouted="false" />
+        <AssociationConnector Association="VideoGameShopModel.Rendeles_has_Termekek" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

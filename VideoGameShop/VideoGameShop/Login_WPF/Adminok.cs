@@ -14,9 +14,19 @@ namespace Login_WPF
     
     public partial class Adminok
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Adminok()
+        {
+            this.Rendeles = new HashSet<Rendele>();
+        }
+    
         public int Adminid { get; set; }
         public string Adminnev { get; set; }
         public string Adminjelszo { get; set; }
         public int Jogosultsag_Jogosultsagid { get; set; }
+    
+        public virtual Jogosultsag Jogosultsag { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Rendele> Rendeles { get; set; }
     }
 }

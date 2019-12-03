@@ -13,10 +13,10 @@ namespace Login_WPF
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class VideoGameShopEntities : DbContext
+    public partial class VideoGameShopEntities1 : DbContext
     {
-        public VideoGameShopEntities()
-            : base("name=VideoGameShopEntities")
+        public VideoGameShopEntities1()
+            : base("name=VideoGameShopEntities1")
         {
         }
     
@@ -28,10 +28,8 @@ namespace Login_WPF
         public virtual DbSet<Adminok> Adminoks { get; set; }
         public virtual DbSet<Felhasznalo> Felhasznaloes { get; set; }
         public virtual DbSet<Jogosultsag> Jogosultsags { get; set; }
+        public virtual DbSet<Rendele> Rendeles { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
-        public virtual DbSet<Adminok_has_Rendeles> Adminok_has_Rendeles { get; set; }
-        public virtual DbSet<Felhasznalo_has_Rendeles> Felhasznalo_has_Rendeles { get; set; }
-        public virtual DbSet<Rendeles_has_Termekek> Rendeles_has_Termekek { get; set; }
-        public virtual DbSet<Termekek> Termekeks { get; set; }
+        public virtual DbSet<Termek> Termeks { get; set; }
     }
 }

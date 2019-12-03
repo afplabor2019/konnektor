@@ -12,20 +12,27 @@ namespace Login_WPF
     using System;
     using System.Collections.Generic;
     
-    public partial class Jogosultsag
+    public partial class Rendele
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Jogosultsag()
+        public Rendele()
         {
             this.Adminoks = new HashSet<Adminok>();
             this.Felhasznaloes = new HashSet<Felhasznalo>();
+            this.Termeks = new HashSet<Termek>();
         }
     
-        public int Jogosultsagid { get; set; }
+        public int Rendelesid { get; set; }
+        public System.DateTime Rendelesdatum { get; set; }
+        public string Rendelescim { get; set; }
+        public string Szallitasmodja { get; set; }
+        public string Fizetesmodja { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Adminok> Adminoks { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Felhasznalo> Felhasznaloes { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Termek> Termeks { get; set; }
     }
 }

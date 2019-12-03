@@ -14,9 +14,19 @@ namespace Login_WPF
     
     public partial class Felhasznalo
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Felhasznalo()
+        {
+            this.Rendeles = new HashSet<Rendele>();
+        }
+    
         public int Felhasznaloid { get; set; }
         public string Felhasznalonev { get; set; }
         public string Jelszo { get; set; }
         public int Jogosultsag_Jogosultsagid { get; set; }
+    
+        public virtual Jogosultsag Jogosultsag { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Rendele> Rendeles { get; set; }
     }
 }

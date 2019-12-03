@@ -12,12 +12,21 @@ namespace Login_WPF
     using System;
     using System.Collections.Generic;
     
-    public partial class Termekek
+    public partial class Termek
     {
-        public Nullable<int> Termekid { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Termek()
+        {
+            this.Rendeles = new HashSet<Rendele>();
+        }
+    
+        public int Termekekid { get; set; }
         public string Termeknev { get; set; }
-        public Nullable<int> Termekar { get; set; }
+        public int Termekar { get; set; }
         public string Termekleiras { get; set; }
-        public string Kep { get; set; }
+        public string kep { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Rendele> Rendeles { get; set; }
     }
 }

@@ -49,15 +49,16 @@ warning 6002: The table/view 'VideoGameShop.dbo.Felhasznalo_has_Rendeles' does n
           </Key>
           <Property Name="Jogosultsagid" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'VideoGameShop.dbo.Rendeles' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
         <EntityType Name="Rendeles">
-          <Property Name="Rendelesid" Type="int" />
-          <Property Name="Rendelesdatum" Type="datetime" />
-          <Property Name="Rendelesicim" Type="varchar" MaxLength="50" />
+          <Key>
+            <PropertyRef Name="Rendelesid" />
+          </Key>
+          <Property Name="Rendelesid" Type="int" Nullable="false" />
+          <Property Name="Rendelesdatum" Type="datetime" Nullable="false" />
+          <Property Name="Rendelescim" Type="varchar" MaxLength="50" />
           <Property Name="Szallitasmodja" Type="varchar" MaxLength="50" />
           <Property Name="Fizetesmodja" Type="varchar" MaxLength="50" />
-        </EntityType>-->
+        </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'VideoGameShop.dbo.Rendeles_has_Termekek' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="Rendeles_has_Termekek">
@@ -78,23 +79,119 @@ warning 6002: The table/view 'VideoGameShop.dbo.Rendeles_has_Termekek' does not 
           <Property Name="version" Type="int" />
           <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'VideoGameShop.dbo.Termekek' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-        <EntityType Name="Termekek">
+        <EntityType Name="Termek">
           <Key>
-            <PropertyRef Name="Kep" />
+            <PropertyRef Name="Termekekid" />
           </Key>
-          <Property Name="Termekid" Type="int" />
-          <Property Name="Termeknev" Type="varchar" MaxLength="45" />
-          <Property Name="Termekar" Type="int" />
-          <Property Name="Termekleiras" Type="varchar" MaxLength="45" />
-          <Property Name="Kep" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="Termekekid" Type="int" Nullable="false" />
+          <Property Name="Termeknev" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Termekar" Type="int" Nullable="false" />
+          <Property Name="Termekleiras" Type="varchar" MaxLength="200" />
+          <Property Name="kep" Type="varchar" MaxLength="50" />
         </EntityType>
+        <Association Name="FK_Adminok_has_Rendeles_Adminok">
+          <End Role="Adminok" Type="Self.Adminok" Multiplicity="1" />
+          <End Role="Adminok_has_Rendeles" Type="Self.Adminok_has_Rendeles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Adminok">
+              <PropertyRef Name="Adminid" />
+            </Principal>
+            <Dependent Role="Adminok_has_Rendeles">
+              <PropertyRef Name="Admin_Adminid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Adminok_has_Rendeles_Rendeles">
+          <End Role="Rendeles" Type="Self.Rendeles" Multiplicity="1" />
+          <End Role="Adminok_has_Rendeles" Type="Self.Adminok_has_Rendeles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rendeles">
+              <PropertyRef Name="Rendelesid" />
+            </Principal>
+            <Dependent Role="Adminok_has_Rendeles">
+              <PropertyRef Name="Rendeles_Rendelesid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Adminok_Jogosultsag">
+          <End Role="Jogosultsag" Type="Self.Jogosultsag" Multiplicity="1" />
+          <End Role="Adminok" Type="Self.Adminok" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Jogosultsag">
+              <PropertyRef Name="Jogosultsagid" />
+            </Principal>
+            <Dependent Role="Adminok">
+              <PropertyRef Name="Jogosultsag_Jogosultsagid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Felhasznalo_has_Rendeles_Felhasznalo">
+          <End Role="Felhasznalo" Type="Self.Felhasznalo" Multiplicity="1" />
+          <End Role="Felhasznalo_has_Rendeles" Type="Self.Felhasznalo_has_Rendeles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Felhasznalo">
+              <PropertyRef Name="Felhasznaloid" />
+            </Principal>
+            <Dependent Role="Felhasznalo_has_Rendeles">
+              <PropertyRef Name="Felhasznalo_Felhasznaloid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Felhasznalo_has_Rendeles_Rendeles">
+          <End Role="Rendeles" Type="Self.Rendeles" Multiplicity="1" />
+          <End Role="Felhasznalo_has_Rendeles" Type="Self.Felhasznalo_has_Rendeles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rendeles">
+              <PropertyRef Name="Rendelesid" />
+            </Principal>
+            <Dependent Role="Felhasznalo_has_Rendeles">
+              <PropertyRef Name="Rendeles_Rendelesid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Felhasznalo_Jogosultsag">
+          <End Role="Jogosultsag" Type="Self.Jogosultsag" Multiplicity="1" />
+          <End Role="Felhasznalo" Type="Self.Felhasznalo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Jogosultsag">
+              <PropertyRef Name="Jogosultsagid" />
+            </Principal>
+            <Dependent Role="Felhasznalo">
+              <PropertyRef Name="Jogosultsag_Jogosultsagid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Rendeles_has_Termekek_Rendeles">
+          <End Role="Rendeles" Type="Self.Rendeles" Multiplicity="1" />
+          <End Role="Rendeles_has_Termekek" Type="Self.Rendeles_has_Termekek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rendeles">
+              <PropertyRef Name="Rendelesid" />
+            </Principal>
+            <Dependent Role="Rendeles_has_Termekek">
+              <PropertyRef Name="Rendeles_Rendelesid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Rendeles_has_Termekek_Termek">
+          <End Role="Termek" Type="Self.Termek" Multiplicity="1" />
+          <End Role="Rendeles_has_Termekek" Type="Self.Rendeles_has_Termekek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Termek">
+              <PropertyRef Name="Termekekid" />
+            </Principal>
+            <Dependent Role="Rendeles_has_Termekek">
+              <PropertyRef Name="Termekek_Termekekid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="VideoGameShopModelStoreContainer">
           <EntitySet Name="Adminok" EntityType="Self.Adminok" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Felhasznalo" EntityType="Self.Felhasznalo" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Jogosultsag" EntityType="Self.Jogosultsag" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Rendeles" EntityType="Self.Rendeles" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Termek" EntityType="Self.Termek" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Adminok_has_Rendeles" EntityType="Self.Adminok_has_Rendeles" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [Adminok_has_Rendeles].[Admin_Adminid] AS [Admin_Adminid], 
@@ -113,15 +210,38 @@ warning 6002: The table/view 'VideoGameShop.dbo.Termekek' does not have a primar
     [Rendeles_has_Termekek].[Termekek_Termekekid] AS [Termekek_Termekekid]
     FROM [dbo].[Rendeles_has_Termekek] AS [Rendeles_has_Termekek]</DefiningQuery>
           </EntitySet>
-          <EntitySet Name="Termekek" EntityType="Self.Termekek" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [Termekek].[Termekid] AS [Termekid], 
-    [Termekek].[Termeknev] AS [Termeknev], 
-    [Termekek].[Termekar] AS [Termekar], 
-    [Termekek].[Termekleiras] AS [Termekleiras], 
-    [Termekek].[Kep] AS [Kep]
-    FROM [dbo].[Termekek] AS [Termekek]</DefiningQuery>
-          </EntitySet>
+          <AssociationSet Name="FK_Adminok_has_Rendeles_Adminok" Association="Self.FK_Adminok_has_Rendeles_Adminok">
+            <End Role="Adminok" EntitySet="Adminok" />
+            <End Role="Adminok_has_Rendeles" EntitySet="Adminok_has_Rendeles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Adminok_has_Rendeles_Rendeles" Association="Self.FK_Adminok_has_Rendeles_Rendeles">
+            <End Role="Rendeles" EntitySet="Rendeles" />
+            <End Role="Adminok_has_Rendeles" EntitySet="Adminok_has_Rendeles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Adminok_Jogosultsag" Association="Self.FK_Adminok_Jogosultsag">
+            <End Role="Jogosultsag" EntitySet="Jogosultsag" />
+            <End Role="Adminok" EntitySet="Adminok" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Felhasznalo_has_Rendeles_Felhasznalo" Association="Self.FK_Felhasznalo_has_Rendeles_Felhasznalo">
+            <End Role="Felhasznalo" EntitySet="Felhasznalo" />
+            <End Role="Felhasznalo_has_Rendeles" EntitySet="Felhasznalo_has_Rendeles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Felhasznalo_has_Rendeles_Rendeles" Association="Self.FK_Felhasznalo_has_Rendeles_Rendeles">
+            <End Role="Rendeles" EntitySet="Rendeles" />
+            <End Role="Felhasznalo_has_Rendeles" EntitySet="Felhasznalo_has_Rendeles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Felhasznalo_Jogosultsag" Association="Self.FK_Felhasznalo_Jogosultsag">
+            <End Role="Jogosultsag" EntitySet="Jogosultsag" />
+            <End Role="Felhasznalo" EntitySet="Felhasznalo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Rendeles_has_Termekek_Rendeles" Association="Self.FK_Rendeles_has_Termekek_Rendeles">
+            <End Role="Rendeles" EntitySet="Rendeles" />
+            <End Role="Rendeles_has_Termekek" EntitySet="Rendeles_has_Termekek" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Rendeles_has_Termekek_Termek" Association="Self.FK_Rendeles_has_Termekek_Termek">
+            <End Role="Termek" EntitySet="Termek" />
+            <End Role="Rendeles_has_Termekek" EntitySet="Rendeles_has_Termekek" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
@@ -136,6 +256,8 @@ warning 6002: The table/view 'VideoGameShop.dbo.Termekek' does not have a primar
           <Property Name="Adminnev" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Adminjelszo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Jogosultsag_Jogosultsagid" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Jogosultsag" Relationship="Self.FK_Adminok_Jogosultsag" FromRole="Adminok" ToRole="Jogosultsag" />
+          <NavigationProperty Name="Rendeles" Relationship="Self.Adminok_has_Rendeles" FromRole="Adminok" ToRole="Rendeles" />
         </EntityType>
         <EntityType Name="Felhasznalo">
           <Key>
@@ -145,12 +267,29 @@ warning 6002: The table/view 'VideoGameShop.dbo.Termekek' does not have a primar
           <Property Name="Felhasznalonev" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Jelszo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Jogosultsag_Jogosultsagid" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Jogosultsag" Relationship="Self.FK_Felhasznalo_Jogosultsag" FromRole="Felhasznalo" ToRole="Jogosultsag" />
+          <NavigationProperty Name="Rendeles" Relationship="Self.Felhasznalo_has_Rendeles" FromRole="Felhasznalo" ToRole="Rendeles" />
         </EntityType>
         <EntityType Name="Jogosultsag">
           <Key>
             <PropertyRef Name="Jogosultsagid" />
           </Key>
           <Property Name="Jogosultsagid" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Adminoks" Relationship="Self.FK_Adminok_Jogosultsag" FromRole="Jogosultsag" ToRole="Adminok" />
+          <NavigationProperty Name="Felhasznaloes" Relationship="Self.FK_Felhasznalo_Jogosultsag" FromRole="Jogosultsag" ToRole="Felhasznalo" />
+        </EntityType>
+        <EntityType Name="Rendele">
+          <Key>
+            <PropertyRef Name="Rendelesid" />
+          </Key>
+          <Property Name="Rendelesid" Type="Int32" Nullable="false" />
+          <Property Name="Rendelesdatum" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Rendelescim" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Szallitasmodja" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Fizetesmodja" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Adminoks" Relationship="Self.Adminok_has_Rendeles" FromRole="Rendeles" ToRole="Adminok" />
+          <NavigationProperty Name="Felhasznaloes" Relationship="Self.Felhasznalo_has_Rendeles" FromRole="Rendeles" ToRole="Felhasznalo" />
+          <NavigationProperty Name="Termeks" Relationship="Self.Rendeles_has_Termekek" FromRole="Rendeles" ToRole="Termek" />
         </EntityType>
         <EntityType Name="sysdiagram">
           <Key>
@@ -162,56 +301,87 @@ warning 6002: The table/view 'VideoGameShop.dbo.Termekek' does not have a primar
           <Property Name="version" Type="Int32" />
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
-        <EntityType Name="Adminok_has_Rendeles">
+        <EntityType Name="Termek">
           <Key>
-            <PropertyRef Name="Admin_Adminid" />
-            <PropertyRef Name="Rendeles_Rendelesid" />
+            <PropertyRef Name="Termekekid" />
           </Key>
-          <Property Name="Admin_Adminid" Type="Int32" Nullable="false" />
-          <Property Name="Rendeles_Rendelesid" Type="Int32" Nullable="false" />
+          <Property Name="Termekekid" Type="Int32" Nullable="false" />
+          <Property Name="Termeknev" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Termekar" Type="Int32" Nullable="false" />
+          <Property Name="Termekleiras" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="kep" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Rendeles" Relationship="Self.Rendeles_has_Termekek" FromRole="Termek" ToRole="Rendeles" />
         </EntityType>
-        <EntityType Name="Felhasznalo_has_Rendeles">
-          <Key>
-            <PropertyRef Name="Felhasznalo_Felhasznaloid" />
-            <PropertyRef Name="Rendeles_Rendelesid" />
-          </Key>
-          <Property Name="Felhasznalo_Felhasznaloid" Type="Int32" Nullable="false" />
-          <Property Name="Rendeles_Rendelesid" Type="Int32" Nullable="false" />
-        </EntityType>
-        <EntityType Name="Rendeles_has_Termekek">
-          <Key>
-            <PropertyRef Name="Rendeles_Rendelesid" />
-            <PropertyRef Name="Termekek_Termekekid" />
-          </Key>
-          <Property Name="Rendeles_Rendelesid" Type="Int32" Nullable="false" />
-          <Property Name="Termekek_Termekekid" Type="Int32" Nullable="false" />
-        </EntityType>
-        <EntityType Name="Termekek">
-          <Key>
-            <PropertyRef Name="Kep" />
-          </Key>
-          <Property Name="Termekid" Type="Int32" />
-          <Property Name="Termeknev" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
-          <Property Name="Termekar" Type="Int32" />
-          <Property Name="Termekleiras" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
-          <Property Name="Kep" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
-        </EntityType>
-        <EntityContainer Name="VideoGameShopEntities" annotation:LazyLoadingEnabled="true">
+        <Association Name="FK_Adminok_Jogosultsag">
+          <End Role="Jogosultsag" Type="Self.Jogosultsag" Multiplicity="1" />
+          <End Role="Adminok" Type="Self.Adminok" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Jogosultsag">
+              <PropertyRef Name="Jogosultsagid" />
+            </Principal>
+            <Dependent Role="Adminok">
+              <PropertyRef Name="Jogosultsag_Jogosultsagid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Felhasznalo_Jogosultsag">
+          <End Role="Jogosultsag" Type="Self.Jogosultsag" Multiplicity="1" />
+          <End Role="Felhasznalo" Type="Self.Felhasznalo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Jogosultsag">
+              <PropertyRef Name="Jogosultsagid" />
+            </Principal>
+            <Dependent Role="Felhasznalo">
+              <PropertyRef Name="Jogosultsag_Jogosultsagid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Adminok_has_Rendeles">
+          <End Role="Adminok" Type="Self.Adminok" Multiplicity="*" />
+          <End Role="Rendeles" Type="Self.Rendele" Multiplicity="*" />
+        </Association>
+        <Association Name="Felhasznalo_has_Rendeles">
+          <End Role="Felhasznalo" Type="Self.Felhasznalo" Multiplicity="*" />
+          <End Role="Rendeles" Type="Self.Rendele" Multiplicity="*" />
+        </Association>
+        <Association Name="Rendeles_has_Termekek">
+          <End Role="Rendeles" Type="Self.Rendele" Multiplicity="*" />
+          <End Role="Termek" Type="Self.Termek" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="VideoGameShopEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Adminoks" EntityType="Self.Adminok" />
           <EntitySet Name="Felhasznaloes" EntityType="Self.Felhasznalo" />
           <EntitySet Name="Jogosultsags" EntityType="Self.Jogosultsag" />
+          <EntitySet Name="Rendeles" EntityType="Self.Rendele" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
-          <EntitySet Name="Adminok_has_Rendeles" EntityType="Self.Adminok_has_Rendeles" />
-          <EntitySet Name="Felhasznalo_has_Rendeles" EntityType="Self.Felhasznalo_has_Rendeles" />
-          <EntitySet Name="Rendeles_has_Termekek" EntityType="Self.Rendeles_has_Termekek" />
-          <EntitySet Name="Termekeks" EntityType="Self.Termekek" />
+          <EntitySet Name="Termeks" EntityType="Self.Termek" />
+          <AssociationSet Name="FK_Adminok_Jogosultsag" Association="Self.FK_Adminok_Jogosultsag">
+            <End Role="Jogosultsag" EntitySet="Jogosultsags" />
+            <End Role="Adminok" EntitySet="Adminoks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Felhasznalo_Jogosultsag" Association="Self.FK_Felhasznalo_Jogosultsag">
+            <End Role="Jogosultsag" EntitySet="Jogosultsags" />
+            <End Role="Felhasznalo" EntitySet="Felhasznaloes" />
+          </AssociationSet>
+          <AssociationSet Name="Adminok_has_Rendeles" Association="Self.Adminok_has_Rendeles">
+            <End Role="Adminok" EntitySet="Adminoks" />
+            <End Role="Rendeles" EntitySet="Rendeles" />
+          </AssociationSet>
+          <AssociationSet Name="Felhasznalo_has_Rendeles" Association="Self.Felhasznalo_has_Rendeles">
+            <End Role="Felhasznalo" EntitySet="Felhasznaloes" />
+            <End Role="Rendeles" EntitySet="Rendeles" />
+          </AssociationSet>
+          <AssociationSet Name="Rendeles_has_Termekek" Association="Self.Rendeles_has_Termekek">
+            <End Role="Rendeles" EntitySet="Rendeles" />
+            <End Role="Termek" EntitySet="Termeks" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="VideoGameShopModelStoreContainer" CdmEntityContainer="VideoGameShopEntities">
+        <EntityContainerMapping StorageEntityContainer="VideoGameShopModelStoreContainer" CdmEntityContainer="VideoGameShopEntities1">
           <EntitySetMapping Name="Adminoks">
             <EntityTypeMapping TypeName="VideoGameShopModel.Adminok">
               <MappingFragment StoreEntitySet="Adminok">
@@ -239,6 +409,17 @@ warning 6002: The table/view 'VideoGameShop.dbo.Termekek' does not have a primar
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="Rendeles">
+            <EntityTypeMapping TypeName="VideoGameShopModel.Rendele">
+              <MappingFragment StoreEntitySet="Rendeles">
+                <ScalarProperty Name="Rendelesid" ColumnName="Rendelesid" />
+                <ScalarProperty Name="Rendelesdatum" ColumnName="Rendelesdatum" />
+                <ScalarProperty Name="Rendelescim" ColumnName="Rendelescim" />
+                <ScalarProperty Name="Szallitasmodja" ColumnName="Szallitasmodja" />
+                <ScalarProperty Name="Fizetesmodja" ColumnName="Fizetesmodja" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="sysdiagrams">
             <EntityTypeMapping TypeName="VideoGameShopModel.sysdiagram">
               <MappingFragment StoreEntitySet="sysdiagrams">
@@ -250,41 +431,41 @@ warning 6002: The table/view 'VideoGameShop.dbo.Termekek' does not have a primar
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Adminok_has_Rendeles">
-            <EntityTypeMapping TypeName="VideoGameShopModel.Adminok_has_Rendeles">
-              <MappingFragment StoreEntitySet="Adminok_has_Rendeles">
-                <ScalarProperty Name="Admin_Adminid" ColumnName="Admin_Adminid" />
-                <ScalarProperty Name="Rendeles_Rendelesid" ColumnName="Rendeles_Rendelesid" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Felhasznalo_has_Rendeles">
-            <EntityTypeMapping TypeName="VideoGameShopModel.Felhasznalo_has_Rendeles">
-              <MappingFragment StoreEntitySet="Felhasznalo_has_Rendeles">
-                <ScalarProperty Name="Felhasznalo_Felhasznaloid" ColumnName="Felhasznalo_Felhasznaloid" />
-                <ScalarProperty Name="Rendeles_Rendelesid" ColumnName="Rendeles_Rendelesid" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Rendeles_has_Termekek">
-            <EntityTypeMapping TypeName="VideoGameShopModel.Rendeles_has_Termekek">
-              <MappingFragment StoreEntitySet="Rendeles_has_Termekek">
-                <ScalarProperty Name="Rendeles_Rendelesid" ColumnName="Rendeles_Rendelesid" />
-                <ScalarProperty Name="Termekek_Termekekid" ColumnName="Termekek_Termekekid" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Termekeks">
-            <EntityTypeMapping TypeName="VideoGameShopModel.Termekek">
-              <MappingFragment StoreEntitySet="Termekek">
-                <ScalarProperty Name="Termekid" ColumnName="Termekid" />
+          <EntitySetMapping Name="Termeks">
+            <EntityTypeMapping TypeName="VideoGameShopModel.Termek">
+              <MappingFragment StoreEntitySet="Termek">
+                <ScalarProperty Name="Termekekid" ColumnName="Termekekid" />
                 <ScalarProperty Name="Termeknev" ColumnName="Termeknev" />
                 <ScalarProperty Name="Termekar" ColumnName="Termekar" />
                 <ScalarProperty Name="Termekleiras" ColumnName="Termekleiras" />
-                <ScalarProperty Name="Kep" ColumnName="Kep" />
+                <ScalarProperty Name="kep" ColumnName="kep" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <AssociationSetMapping Name="Adminok_has_Rendeles" TypeName="VideoGameShopModel.Adminok_has_Rendeles" StoreEntitySet="Adminok_has_Rendeles">
+            <EndProperty Name="Adminok">
+              <ScalarProperty Name="Adminid" ColumnName="Admin_Adminid" />
+            </EndProperty>
+            <EndProperty Name="Rendeles">
+              <ScalarProperty Name="Rendelesid" ColumnName="Rendeles_Rendelesid" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="Felhasznalo_has_Rendeles" TypeName="VideoGameShopModel.Felhasznalo_has_Rendeles" StoreEntitySet="Felhasznalo_has_Rendeles">
+            <EndProperty Name="Felhasznalo">
+              <ScalarProperty Name="Felhasznaloid" ColumnName="Felhasznalo_Felhasznaloid" />
+            </EndProperty>
+            <EndProperty Name="Rendeles">
+              <ScalarProperty Name="Rendelesid" ColumnName="Rendeles_Rendelesid" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="Rendeles_has_Termekek" TypeName="VideoGameShopModel.Rendeles_has_Termekek" StoreEntitySet="Rendeles_has_Termekek">
+            <EndProperty Name="Rendeles">
+              <ScalarProperty Name="Rendelesid" ColumnName="Rendeles_Rendelesid" />
+            </EndProperty>
+            <EndProperty Name="Termek">
+              <ScalarProperty Name="Termekekid" ColumnName="Termekek_Termekekid" />
+            </EndProperty>
+          </AssociationSetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
