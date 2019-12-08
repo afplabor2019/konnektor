@@ -3,7 +3,14 @@
 	- A rendszer célja, hogy a felhasználó otthonról, kényelmesen tudja megszerezni kedvenc számítógépes vagy éppen konzolos játékát. Áron alul, illetve kedvezményekkel együtt.
 	- A rendszer nem célja a felhasználó átverése, pénzével való vissszaélése.
 
-2. - 
+2. - Projektterv
+	
+	- Követelmény Specifikáció, Funkcionális Specifikáció, Rendszerterv elkészítése (november 18)
+	- Login és Regisztrációs felület elkészítése (november 22)
+	- Adatbázis kapcsolat elkészítése (november 26)
+	- Fő felület elkészítése (november 29)
+	- Fő felület funkciói (december 2)
+	- Tesztelés (december 9)
 
 
 3. - Üzleti folyamatok modellje
