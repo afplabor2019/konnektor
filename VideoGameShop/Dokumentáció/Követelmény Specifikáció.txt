@@ -69,6 +69,10 @@
 	Kivitelező: Értettem, körülbelül 2 hét múlva kész is, az 5 misi 30%-át milyen számlaszámra küldhetem?
 	Megrendelő: Még soha nem volt ennyire korrekt üzletem, igazán elégedett vagyok, jövök máskor is!
 
-8. - 
+8. - Fogalomszótár
+
+	- Online: internethez kapcsolódott, elérhető, folyamatban kapcsolatban lévő
+	- Platform: több szemszögből érthető, adott programhoz szükséges hardver- és/vagy a szoftverkörnyezet
+	- Bug: Fejlesztési hiba
 
 
