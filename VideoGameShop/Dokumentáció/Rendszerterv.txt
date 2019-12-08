@@ -93,7 +93,9 @@
 	Az általános alany szerepkörét a bejelentkezés után a Jogosultság vizsgálata dönti el. Az adatbázis kezelését szabályozó funkciók
 	kizárólag az admin számára elérhetõek. A további eszközöket mindkét szint használhatja.
 
-8. - 
+8. - Architekturális terv
+
+	- A projektünkhöz nem szükséges a Tanár Úr véleménye szerint.
 
 
 9. - Adatbázisterv
