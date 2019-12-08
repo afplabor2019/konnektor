@@ -20,7 +20,23 @@
 	ADMIN jogosultsággal rendelkező felhasználóknak extra funkciókkal rendelkeznek. Adhatnak, módosíthatnak vagy akár törölhetnek is termékeket a virtuális boltból. 
 
 
-4. - 
+4. - A rendszerre vonatkozó külső megszorítások: pályázat, törvények, rendeletek, szabványok és ajánlások felsorolása
+
+	A külső megszorítások közé tartoziknak a :
+	- pályázat
+	- törvények
+	- rendeletek
+	- szabványok és ajanlások
+	- A pályázatban leírt időnek és kriteriumoknak meg kell felelni.
+	A pályázaton elnyert összeggel el kell számolni mire használjuk fel.
+	A megadott időn belül el kell végezni a feladatokat, különben nem teljesül a feltétel.
+	- A programnak meg kell felelni az adott országban meghatározott törvényeknek.
+	A program igazi valutát használ. Ennek következtében kiskorúak nem használhatják.
+	- Lehetnek kifejezetten erre a célra meghatározott rendeletek aminek szintén meg kell felelni.
+	Mivel Magyarországon készül a program így a magyar törvénykönyv pontjainak meg kell felelni.
+	-Figyelembe kell venni, hogy a programot csak számítógépen fogják használni.
+	- Az összesnek együtt meg kell felelni, hogy létrejöhessen, és használható legyen a program.
+	Ha már az egyik nem teljesül, vagy a program nem megfelelő, úgy nem lehet használni.
 
 
 5. - Jelenlegi üzleti folyamatok modellje
@@ -101,7 +117,7 @@ Szereplők:
 	done K10 - összegzés
 	failed K11 - a kívánt tételek fizetése
 
-10. - 
+10. 
 
 
 11. - Forgatókönyvek
