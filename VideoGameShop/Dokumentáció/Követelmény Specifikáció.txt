@@ -57,8 +57,17 @@
 	3. Nem funkcionális követelmények:
 		- A felhasználóknak lehetőségük van szerkeszteni profiljukat, új profilképet beállítani, jelszót változtatni és akár a saját accountjukat is letörölhetik. 
 
-7. - 
+7. - Irányított és szabad szöveges riportok szövege
 
+	Megrendelő: Jó napot kívánok!
+	Kivitelező: Jó napot! Miben lehetek a szolgálatára?
+	Megrendelő: Saját felhasználásra szeretnénk egy online videójáték shoppot asztali alkalmazásként.
+	Kivitelező: Értem, és pontosan milyen programra gondolna?
+	Megrendelő: Egy egyszerű kis programra, ahol az emberek könnyedén meg tudják vásárolni maguknak kedvenc játékaikat.
+	Kivitelező: Mennyire bonyolult dologra van szüksége?
+	Megrendelő: A létező legegyszerűbbre.
+	Kivitelező: Értettem, körülbelül 2 hét múlva kész is, az 5 misi 30%-át milyen számlaszámra küldhetem?
+	Megrendelő: Még soha nem volt ennyire korrekt üzletem, igazán elégedett vagyok, jövök máskor is!
 
 8. - 
 
