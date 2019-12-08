@@ -117,7 +117,8 @@ Szereplők:
 	done K10 - összegzés
 	failed K11 - a kívánt tételek fizetése
 
-10. 
+10. - Képernyőtervek
+	(külön fájlban)
 
 
 11. - Forgatókönyvek
